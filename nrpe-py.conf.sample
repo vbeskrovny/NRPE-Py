@@ -1,5 +1,5 @@
 [program:nrpe-py]
-command=/opt/src/nrpe-py/app.py
+command=/opt/src/nrpe-py/app.py <--- SETUP !!!
 user=root
 autostart=true
 autorestart=true

@@ -6,12 +6,14 @@ class GlobalVars:
 		self.appName = 'nrpe-py'
 		self.selfName = os.path.realpath(sys.argv[0])
 		self.http_host = '0.0.0.0'
-		self.http_port = 666
+		self.http_port = NRPE_PY_PORT <--- SETUP !!!
 		self.use_ssl = True
 		self.certfile = '/etc/ssl/certs/ssl-cert-snakeoil.pem'
+		#self.certfile = '/etc/letsencrypt/live/YOUR_HOSTNAME/fullchain.pem'
 		self.keyfile = '/etc/ssl/private/ssl-cert-snakeoil.key'
-		self.secret_key = '00000000000000000000000000000000'
-		self.auth_tokens = set([ '00000000000000000000000000000000' ])
+		#self.keyfile = '/etc/letsencrypt/live/YOUR_HOSTNAME/privkey.pem'
+		self.secret_key = '00000000000000000000000000000000' <--- SETUP !!!
+		self.auth_tokens = set([ '00000000000000000000000000000000' ]) <--- SETUP !!!
 		self.apps = set([ 'check_disk' ])
 
 
