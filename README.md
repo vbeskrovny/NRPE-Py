@@ -1,7 +1,7 @@
 # NRPE-Py
 
 ## Files
-* [app.py = main application (to be executed by nrpe-py.conf from supervisord)](https://github.com/vbeskrovny/NRPE-Py/blob/f1e144bab3767ae71e3d339c9f008d3e0ca06655/app.py)
+* [app.py](https://github.com/vbeskrovny/NRPE-Py/blob/f1e144bab3767ae71e3d339c9f008d3e0ca06655/app.py) = main application (to be executed by nrpe-py.conf from supervisord)
 * check_by_curl_insecure.sh.sample (nagios server plugin, to be placed in /usr/lib/nagios/plugins or whatever directory you define for the plugins)
 * check_by_curl.sh.sample (nagios server plugin, to be placed in /usr/lib/nagios/plugins or whatever directory you define for the plugins)
 * [mod_gv.py.sample = application configuration (should be in the same directory as app.py)](https://github.com/vbeskrovny/NRPE-Py/blob/f1e144bab3767ae71e3d339c9f008d3e0ca06655/mod_gv.py.sample)
