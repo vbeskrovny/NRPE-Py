@@ -1,5 +1,10 @@
 # NRPE-Py
 
+## Project description
+NRPE Nagios plugin implemented in Python
+
+
+
 ## Files
 * [app.py](https://github.com/vbeskrovny/NRPE-Py/blob/main/app.py) = main application (to be executed by nrpe-py.conf from supervisord)
 * [check_by_curl_insecure.sh.sample](https://github.com/vbeskrovny/NRPE-Py/blob/main/check_by_curl_insecure.sh.sample) (nagios server plugin, to be placed in /usr/lib/nagios/plugins or whatever directory you define for the plugins)
