@@ -14,6 +14,9 @@ It is basically a backdoor, therefore be very careful with what you are allowing
 * Generate auth_token(s): `ps | sha512sum` (trim to the desired length)
 * Configure and remove all "SETUP" comments (see below)
 * Enjoy :)
+ 
+PS: you might need to install tornado libs - `pip3 install tornado`
+
 
 
 ## Files
