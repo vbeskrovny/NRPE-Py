@@ -1,0 +1,11 @@
+[program:nrpe-py]
+command=/opt/src/nrpe-py/app.py
+user=root
+autostart=true
+autorestart=true
+stderr_logfile=/var/log/supervisor/%(program_name)s_stderr.log
+stdout_logfile=/var/log/supervisor/%(program_name)s_stdout.log
+stdout_logfile_maxbytes=10240
+stderr_logfile_maxbytes=10240
+stdout_logfile_backups=3
+stderr_logfile_backups=3
