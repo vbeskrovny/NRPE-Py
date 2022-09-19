@@ -22,18 +22,18 @@ define service {
 ```
 define command {
     command_name        check_by_curl
-    command_line        $USER1$/check_by_curl.sh "00000000000000000000000000000000" "https://$HOSTADDRESS$:NRPE_PY_PORT/exec?cmd=$ARG1$&$ARG2$"
+    command_line        $USER1$/check_by_curl.sh "00000000000000000000000000000000" "https://$HOSTADDRESS$:NRPE_PY_PORT/exec?cmd=$ARG1$&$ARG2$" <--- SETUP !!! ---> check self.auth_tokens in mod_gv.py
 }
 
 
 define command {
     command_name        check_by_curl_insecure
-    command_line        $USER1$/check_by_curl_insecure.sh "00000000000000000000000000000000" "https://$HOSTADDRESS$:NRPE_PY_PORT/exec?cmd=$ARG1$&$ARG2$"
+    command_line        $USER1$/check_by_curl_insecure.sh "00000000000000000000000000000000" "https://$HOSTADDRESS$:NRPE_PY_PORT/exec?cmd=$ARG1$&$ARG2$" <--- SETUP !!! ---> check self.auth_tokens in mod_gv.py
 }
 
 
 define command {
     command_name        check_nrpe
-    command_line        $USER1$/check_http -S -H $HOSTADDRESS$ -u /status -p NRPE_PY_PORT -s "+OK"
+    command_line        $USER1$/check_http -S -H $HOSTADDRESS$ -u /status -p NRPE_PY_PORT -s "+OK" <--- SETUP !!! ---> check self.http_port in mod_gv.py
 }
 ```
