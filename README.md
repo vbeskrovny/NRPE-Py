@@ -13,7 +13,7 @@ It is basically a backdoor, therefore be very careful with what you are allowing
 * Place files according to the description (see below)
 * Generate auth_token(s): `ps | sha512sum` (trim to the desired length)
 * Configure and remove all "SETUP" comments (see below)
-* check_by_curl.sh and check_by_curl_insecure.sh should be in plugins directory of your Nagios installation (e.g. Nagios server)
+* check_by_curl.sh and check_by_curl_insecure.sh should be in plugins directory of your Nagios installation (i.e. Nagios server)
 * Enjoy :)
  
 PS: you might need to install tornado libs - `pip3 install tornado`
