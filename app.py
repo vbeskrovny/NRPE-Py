@@ -89,7 +89,7 @@ class TornadoRequestsHandler(tornado.web.RequestHandler):
 				if cmd in GV.apps:
 					
 					commands = dict()
-					app = '/usr/lib/nagios/plugins/%s' % cmd
+					app = '%s/%s' % (GV.apps_path, cmd)
 					commands[app] = app
 					
 					for k, v in _GET.copy().items():

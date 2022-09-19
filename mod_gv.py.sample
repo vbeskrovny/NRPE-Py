@@ -14,6 +14,7 @@ class GlobalVars:
 		#self.keyfile = '/etc/letsencrypt/live/YOUR_HOSTNAME/privkey.pem'
 		self.secret_key = '00000000000000000000000000000000' <--- SETUP !!!
 		self.auth_tokens = set([ '00000000000000000000000000000000' ]) <--- SETUP !!!
+		self.apps_path = '/usr/lib/nagios/plugins'
 		self.apps = set([ 'check_disk' ]) <--- SETUP !!!
 
 
