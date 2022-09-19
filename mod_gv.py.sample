@@ -1,0 +1,19 @@
+
+import os, sys
+
+class GlobalVars:
+	def __init__(self):
+		self.appName = 'nrpe-py'
+		self.selfName = os.path.realpath(sys.argv[0])
+		self.http_host = '0.0.0.0'
+		self.http_port = 666
+		self.use_ssl = True
+		self.certfile = '/etc/ssl/certs/ssl-cert-snakeoil.pem'
+		self.keyfile = '/etc/ssl/private/ssl-cert-snakeoil.key'
+		self.secret_key = '00000000000000000000000000000000'
+		self.auth_tokens = set([ '00000000000000000000000000000000' ])
+		self.apps = set([ 'check_disk' ])
+
+
+GV = GlobalVars()
+
