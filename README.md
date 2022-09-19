@@ -3,6 +3,13 @@
 ## Project description
 NRPE Nagios plugin implemented in Python
 
+#### Installation process
+* Clone the repo
+* Rename .sample files
+* Place files according to the description (see below)
+* Generate auth_token(s): `ps | sha512sum` (trim to the desired length)
+* Configure and remove all "SETUP" comments (see below)
+* Enjoy :)
 
 
 ## Files
