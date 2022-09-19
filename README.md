@@ -1,9 +1,9 @@
 # NRPE-Py
 
 ## Project description
-NRPE Nagios plugin implemented in Python.
+NRPE Nagios plugin implemented in Python (with SSL support & authentication).
 
-Works as a standalone web server with (or without) SSL support (see mod_gv.py.sample file).
+Works as a standalone web server with (or without) SSL support (see mod_gv.py.sample file) + token based authentication.
 
 It is basically a backdoor, therefore be very careful with what you are allowing to be invoked (see mod_gv.py.sample file -> self.apps variable).
 
