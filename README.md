@@ -1,7 +1,12 @@
 # NRPE-Py
 
 ## Files
-* app.py
+* app.py = main application (to be executed by nrpe-py.conf from supervisord)
+* check_by_curl_insecure.sh.sample (nagios server plugin, to be placed in /usr/lib/nagios/plugins or whatever directory you define for the plugins)
+* check_by_curl.sh.sample (nagios server plugin, to be placed in /usr/lib/nagios/plugins or whatever directory you define for the plugins)
+* mod_gv.py.sample = application configuration (should be in the same directory as app.py)
+* nrpe-py.conf.sample = supervisord service file (to be placed in /etc/supervisor/conf.d)
+
 
 ## Nagios host section:
 ```
