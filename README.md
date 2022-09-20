@@ -7,6 +7,12 @@ Works as a standalone web server with (or without) SSL support (see mod_gv.py.sa
 
 It is basically a backdoor, therefore be very careful with what you are allowing to be invoked (see mod_gv.py.sample file -> self.apps variable).
 
+
+### High level design overview
+![High level design overview](https://raw.githubusercontent.com/vbeskrovny/NRPE-Py/main/NRPE-Py-HL-Design.png "High level design overview")
+
+
+
 ## Installation process
 * Clone the repo
 * Rename .sample files
