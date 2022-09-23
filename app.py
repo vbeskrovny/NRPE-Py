@@ -86,7 +86,7 @@ class TornadoRequestsHandler(tornado.web.RequestHandler):
 			cmd = self.get_argument('cmd', None)
 			
 			if auth_token and auth_token in GV.auth_tokens:
-				if cmd in GV.apps:
+				if cmd and cmd in GV.apps:
 					
 					commands = dict()
 					app = '%s/%s' % (GV.apps_path, cmd)
