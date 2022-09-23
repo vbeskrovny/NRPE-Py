@@ -107,11 +107,17 @@ class TornadoRequestsHandler(tornado.web.RequestHandler):
 					
 					
 				else:
-					self.set_status(404)
+					## Forbidden -> app is not allowed
+					self.set_status(403)
+					self.write('Err: app [ %s ] is not allowed' % cmd)
 			else:
+				## Not auth -> bad token
 				self.set_status(401)
+				self.write('Err: bad auth')
 		else:
+			## Not found -> bad url
 			self.set_status(404)
+			self.write('Err: not found')
 
 
 	@gen.coroutine
