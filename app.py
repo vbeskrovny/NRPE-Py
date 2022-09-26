@@ -176,7 +176,7 @@ if __name__ == '__main__':
 		asyncio.set_event_loop_policy(AnyThreadEventLoopPolicy())
 		asyncio.set_event_loop(asyncio.new_event_loop())
 
-		tornadoApp = tornado.web.Application( [ (r"/(.*)", TornadoRequestsHandler) ], cookie_secret=GV.secret_key, debug=True )
+		tornadoApp = tornado.web.Application( [ (r"/(.*)", TornadoRequestsHandler) ], cookie_secret=GV.secret_key, debug=False )
 
 
 		if GV.use_ssl:
